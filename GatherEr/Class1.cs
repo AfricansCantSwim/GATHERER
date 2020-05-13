@@ -12,10 +12,10 @@ namespace GatherEr
     {
         public static string IPAddress()
         {
-            WebClient wc = new WebClient();
+            WebClient wc = new WebClient();//create a new webclient so that i can use it later :P
             
-            string ipaddress = wc.DownloadString("https://api.ipify.org/");
-            return ipaddress;
+            string ipaddress = wc.DownloadString("https://api.ipify.org/");//initate a GET request to the site 
+            return ipaddress;//return IPaddress
 
         }
     }
